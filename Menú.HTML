@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Pizzería y Comidas Rápidas TYM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #fff9e6;
+            color: #2c2c2c;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #d4a017;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #b8860b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #8b4513;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #d4a017;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .item {
+            margin: 10px 0;
+        }
+        .nombre {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .precio {
+            float: right;
+            color: #8b4513;
+            font-weight: bold;
+        }
+        .descripcion {
+            font-size: 0.9rem;
+            color: #444;
+            margin-left: 15px;
+        }
+        .clear {
+            clear: both;
+        }
+        .contacto {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f5e4b7;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #8b4513;
+            font-size: 1.1rem;
+        }
+        .bebida-fila {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menú Digital</h1>
+        <p style="font-size: 1.3rem; font-weight: bold;">Pizzería y Comidas Rápidas TYM</p>
+    </header>
+
+
+    <h2>Entradas</h2>
+
+    <div class="item">
+        <span class="nombre">Empanadas</span>
+        <span class="precio">$3.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pollo (Solo Pollo)</p>
+        <p class="descripcion">Mixta (Carne, Pollo y Arroz)</p>
+        <p class="descripcion">Papa con Carne (Papa con Carne)</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Pasteles</span>
+        <span class="precio">$3.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Yuca (Arroz y Medio Huevo)</p>
+    </div>
+
+
+    <h2>Porción de Pizzas</h2>
+
+    <div class="item">
+        <span class="nombre">Pollo Champiñón</span>
+        <span class="precio">$8.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Pollo y Champiñón</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Pepperoni</span>
+        <span class="precio">$8.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Jamón y Pepperoni</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Hawaiana</span>
+        <span class="precio">$8.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Jamón y Piña</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Criolla</span>
+        <span class="precio">$8.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Maíz Tierno y Carne</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Mexicana</span>
+        <span class="precio">$8.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Tostacos, Pico de Gallo, Carne Molida y Salsa Boloñesa</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Carnes</span>
+        <span class="precio">$8.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Queso, Salchicha y Jamón</p>
+    </div>
+
+
+    <h2>Pizza Familiar</h2>
+    <div class="item">
+        <span class="nombre">Familiar</span>
+        <span class="precio">$64.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">8 Porciones, 2 Sabores y Todos los Sabores</p>
+    </div>
+
+
+    <h2>Pizza Personal</h2>
+    <div class="item">
+        <span class="nombre">Personal</span>
+        <span class="precio">$13.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">4 Porciones y 1 Sabor</p>
+    </div>
+
+
+    <h2>Comidas Rápidas — Hamburguesas</h2>
+
+    <div class="item">
+        <span class="nombre">Sencilla</span>
+        <span class="precio">$11.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Carne, Tomate, Lechuga, Cebolla Caramelizada, Queso y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Especial</span>
+        <span class="precio">$12.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Carne 100%, Tomate, Lechuga, Cebolla Caramelizada, Queso, Papa Chip y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Súper Especial</span>
+        <span class="precio">$14.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Carne 100%, Tomate, Lechuga, Cebolla Caramelizada, Queso, Papa Chip, Pollo Desmechado, Huevo de Codorniz y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">De Pollo</span>
+        <span class="precio">$12.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Pollo, Tomate, Lechuga, Cebolla Caramelizada, Queso y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Especial de Pollo</span>
+        <span class="precio">$14.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Pollo, Jamón, Tomate, Lechuga, Cebolla Caramelizada, Queso, Huevo de Codorniz y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Mixta</span>
+        <span class="precio">$17.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Carne 100% y Pollo, Tomate, Lechuga, Cebolla Caramelizada, Queso, Papa Chip y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Campesina</span>
+        <span class="precio">$14.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Carne 100%, Huevo Frito, Tomate, Lechuga, Cebolla Caramelizada, Queso, Papa Chip y Salsas</p>
+    </div>
+
+
+    <h2>Perros Calientes</h2>
+
+    <div class="item">
+        <span class="nombre">Sencillo</span>
+        <span class="precio">$10.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Salchicha, Cebolla Caramelizada, Queso, Papa Chip y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Americano</span>
+        <span class="precio">$12.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Salchicha Americana, Cebolla Caramelizada, Queso, Papa Chip, Huevo de Codorniz y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Especial</span>
+        <span class="precio">$13.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Salchicha Americana, Cebolla Caramelizada, Queso, Papa Chip, Pollo Desmechado, Huevo de Codorniz y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Súper Especial</span>
+        <span class="precio">$15.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Salchicha Americana, Cebolla Caramelizada, Tocineta, Pollo Desmechado, Huevo de Codorniz, Queso y Salsas</p>
+    </div>
+
+
+    <h2>Salchipapas</h2>
+
+    <div class="item">
+        <span class="nombre">Sencillo</span>
+        <span class="precio">$9.500</span>
+        <div class="clear"></div>
+        <p class="descripcion">Salchicha, Papa, Papa Chip, Queso y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Especial</span>
+        <span class="precio">$12.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Salchicha, Papa, Queso, Papa Chip, Huevo de Codorniz, Pollo Desmechado y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Mazorcada</span>
+        <span class="precio">$16.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Salchicha Americana, Maíz Tierno, Jamón, Carne o Pollo Desmechado, Queso, Papa Chip y Salsas</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Chori-Perro</span>
+        <span class="precio">$10.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">Pan, Chorizo, Papa Chip, Salsas y Queso</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Mini Churrasco</span>
+        <span class="precio">$25.000</span>
+        <div class="clear"></div>
+        <p class="descripcion">250 g de Carne, Papa a la Francesa y Yuca</p>
+    </div>
+
+    <div class="item">
+        <span class="nombre">Porción de Papa</span>
+        <span class="precio">$6.000</span>
+        <div class="clear"></div>
+    </div>
+
+
+    <h2>Bebidas — Jugos Naturales</h2>
+    <p style="font-style: italic; margin-bottom: 8px;">Agua / Leche</p>
+    
+    <div class="bebida-fila">
+        <span>Guanábana</span>
+        <span>$6.000 / $7.000</span>
+    </div>
+    <div class="bebida-fila">
+        <span>Mora</span>
+        <span>$6.000 / $7.000</span>
+    </div>
+    <div class="bebida-fila">
+        <span>Fresa</span>
+        <span>$6.000 / $7.000</span>
+    </div>
+    <div class="bebida-fila">
+        <span>Lulo</span>
+        <span>$6.000 / $7.000</span>
+    </div>
+    <div class="bebida-fila">
+        <span>Maracuyá</span>
+        <span>$6.000 / $7.000</span>
+    </div>
+    <div class="bebida-fila">
+        <span>Limonada</span>
+        <span>$6.000 / $6.000</span>
+    </div>
+
+    <p style="margin-top: 12px; font-style: italic;">Gaseosas y jugos de productos Coca-Cola y Postobón — Disponibles en el local</p>
+
+
+    <div class="contacto">
+        <p>📞 Domicilios: 311 530 70 99</p>
+        <p>Pizzería y Comidas Rápidas TYM</p>
+    </div>
+
+    <footer>
+        ¡Gracias por tu visita!
+    </footer>
+
+</body>
+</html>
